@@ -1,10 +1,25 @@
-- 👋 Hi, I’m @sunilcj
-- 👀 I’m interested in backend development
-- 🌱 I do everything and anything in a development cycle
-- 💞️ 
-- 📫 Reach me on : email - sunil.cj@dutchview.com
+# Hi there! 👋 I'm Sunil CJ
 
-<!---
-sunilcj/sunilcj is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## About Me
+- 👀 I'm passionate about backend development.
+- 🌱 I thrive in every aspect of the development cycle.
+- 💞️ [Connect with me on LinkedIn](https://www.linkedin.com/in/sunil-c-j-4aa92b47/)
+- 📧 Reach me via email: sunil.cj@dutchview.com
+
+## Technologies & Skills
+- 💻 Backend Development | Python, Node.js
+- 🛢️ Databases | SQL, MongoDB
+- ⚙️ DevOps | Docker, Kubernetes
+- 🌐 Web Technologies | RESTful APIs, GraphQL
+
+## Projects
+- 🚀 [Project 1 - Awesome Project](https://github.com/sunilcj/awesome-project)
+- 🌟 [Project 2 - Cool App](https://github.com/sunilcj/cool-app)
+
+## Let's Connect
+- 📫 [Email](mailto:sunil.cj@dutchview.com)
+- 🔗 [GitHub](https://github.com/sunilcj)
+- 🌐 [Portfolio](https://www.yourportfolio.com)
+
+## Stats
+![Sunil's GitHub stats](https://github-readme-stats.vercel.app/api?username=sunilcj&show_icons=true&theme=radical)
