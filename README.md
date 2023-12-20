@@ -13,8 +13,8 @@
 - 🌐 Web Technologies | RESTful APIs, GraphQL
 
 ## Projects
-- 🚀 [Project 1 - Awesome Project](https://github.com/sunilcj/awesome-project)
-- 🌟 [Project 2 - Cool App](https://github.com/sunilcj/cool-app)
+- 🚀 [Project 1 - ]
+- 🌟 [Project 2 - ]
 
 ## Let's Connect
 - 📫 [Email](mailto:sunil.cj@dutchview.com)
