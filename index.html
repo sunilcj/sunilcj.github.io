@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunil C.J</title>
+<meta name="description" content="Sunil C.J — Technical Team Lead at Dutchview. Backend engineering, cloud architecture and team leadership. Java, Spring Boot, AWS, Kubernetes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --ground: #F4F6F8;
+    --surface: #FFFFFF;
+    --ink: #16283A;
+    --muted: #5C7080;
+    --accent: #B26E15;
+    --accent-strong: #96590F;
+    --line: #DCE3E9;
+    --chip: #E9EEF2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0D1B2A;
+      --surface: #13253A;
+      --ink: #D5DFE8;
+      --muted: #8CA2B3;
+      --accent: #E89522;
+      --accent-strong: #F2AC4B;
+      --line: #24384D;
+      --chip: #1A3049;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0D1B2A;
+    --surface: #13253A;
+    --ink: #D5DFE8;
+    --muted: #8CA2B3;
+    --accent: #E89522;
+    --accent-strong: #F2AC4B;
+    --line: #24384D;
+    --chip: #1A3049;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Public Sans", "Segoe UI", -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* Hero */
+  header { padding: 88px 0 56px; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", "Public Sans", sans-serif;
+    font-weight: 700;
+    font-size: clamp(42px, 8vw, 64px);
+    line-height: 1.04;
+    letter-spacing: -0.015em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 40ch;
+    margin: 0;
+    color: var(--muted);
+  }
+  .lede strong { color: var(--ink); font-weight: 600; }
+
+  /* Stat row — the one bold moment */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 56px 0 0;
+  }
+  .stat { background: var(--surface); padding: 20px 22px; }
+  .stat b {
+    display: block;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.1;
+    color: var(--accent-strong);
+    font-variant-numeric: tabular-nums;
+  }
+  .stat span {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+
+  /* Sections */
+  section { padding: 52px 0 0; }
+  h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 22px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  h2::after { content: ""; height: 1px; flex: 1; background: var(--line); }
+  p { max-width: 65ch; margin: 0 0 1em; }
+  .quiet { color: var(--muted); }
+
+  /* Work list */
+  .work { display: flex; flex-direction: column; gap: 18px; margin: 0; padding: 0; list-style: none; }
+  .work li { padding-left: 22px; position: relative; max-width: 65ch; }
+  .work li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0.62em;
+    width: 9px; height: 9px;
+    border-radius: 2px;
+    background: var(--accent);
+    transform: rotate(45deg);
+  }
+  .work b { font-weight: 600; }
+
+  /* Timeline — order carries real information here */
+  .timeline { margin: 0; padding: 0; list-style: none; border-left: 1px solid var(--line); }
+  .timeline li { position: relative; padding: 0 0 34px 28px; }
+  .timeline li:last-child { padding-bottom: 4px; }
+  .timeline li::before {
+    content: "";
+    position: absolute;
+    left: -5px; top: 7px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--ground);
+    border: 2px solid var(--accent);
+  }
+  .when {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .role { font-weight: 600; margin: 3px 0 2px; font-size: 17.5px; }
+  .org { color: var(--muted); font-size: 15.5px; }
+  .timeline p { margin: 8px 0 0; font-size: 15.5px; color: var(--muted); max-width: 60ch; }
+
+  /* Stack chips */
+  .chips { display: flex; flex-wrap: wrap; gap: 9px; margin: 0; padding: 0; list-style: none; }
+  .chips li {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    padding: 6px 12px;
+    background: var(--chip);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--ink);
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 72px;
+    padding: 40px 0 64px;
+    border-top: 1px solid var(--line);
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 26px; font-family: "IBM Plex Mono", monospace; font-size: 14px; }
+  .colophon { margin-top: 26px; font-size: 13px; color: var(--muted); }
+
+  /* Load motion, restrained */
+  @media (prefers-reduced-motion: no-preference) {
+    header .eyebrow, header h1, header .lede, header .stats {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: rise 0.6s ease-out forwards;
+    }
+    header h1 { animation-delay: 0.07s; }
+    header .lede { animation-delay: 0.14s; }
+    header .stats { animation-delay: 0.24s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+  }
+
+  @media (max-width: 560px) {
+    header { padding-top: 60px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <p class="eyebrow">Deventer, the Netherlands</p>
+      <h1>Sunil C.J</h1>
+      <p class="lede">Technical Team Lead at <strong>Dutchview</strong> — I build and run the backend platforms behind <strong>FlexWhere</strong> and <strong>EdControls</strong>, and the team that ships them.</p>
+
+      <div class="stats">
+        <div class="stat"><b>13+</b><span>years engineering</span></div>
+        <div class="stat"><b>30+</b><span>microservices in production</span></div>
+        <div class="stat"><b>−27%</b><span>AWS infrastructure cost</span></div>
+        <div class="stat"><b>2</b><span>SaaS platforms led</span></div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a backend engineer who grew into leadership without putting down the keyboard. My background is Java, Spring Boot, microservices and AWS, with a growing focus on cloud cost efficiency and modernising legacy systems.</p>
+      <p>At Dutchview I lead the engineering behind FlexWhere and EdControls — thirty-plus microservices on Java/Spring Boot, Elasticsearch and Kubernetes — and own architecture, delivery, hiring and mentoring for the team. I care about systems that are simple to operate, engineers who become stronger decision-makers, and keeping the conversation between business and engineering honest in both directions.</p>
+    </section>
+
+    <section id="work">
+      <h2>Selected work</h2>
+      <ul class="work">
+        <li><b>Monolith to microservices.</b> Led the migration of Dutchview's platform to 30+ independently deployable services, improving scalability and release cadence.</li>
+        <li><b>Cloud cost optimisation.</b> Cut AWS infrastructure costs by roughly 27% through EC2/S3 optimisation and architecture review — same workloads, smaller bill.</li>
+        <li><b>On-premise to SaaS.</b> Drove the transition of on-premise deployments to a SaaS delivery model, simplifying maintenance and updates for every customer.</li>
+        <li><b>Storage licensing model.</b> Co-designed a new licensing model that turned storage into a measurable revenue contributor.</li>
+        <li><b>Platform modernisation.</b> OAuth2 authentication, billing and calendar integrations, real-time search — replacing legacy components without stopping the train.</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2018 — now</span>
+          <div class="role">Technical Team Lead</div>
+          <div class="org">Dutchview IT · Deventer, NL</div>
+          <p>Engineering lead for the FlexWhere and EdControls SaaS platforms.</p>
+        </li>
+        <li>
+          <span class="when">2016 — 2018</span>
+          <div class="role">Senior Software Engineer → Tech Lead</div>
+          <div class="org">Mobinius · Bengaluru, IN</div>
+          <p>Grew into a first leadership role, leading a team of ~12 engineers.</p>
+        </li>
+        <li>
+          <span class="when">2015 — 2016</span>
+          <div class="role">Software Developer</div>
+          <div class="org">July Systems · Bengaluru, IN</div>
+          <p>Location-analytics SaaS projects for AMEX, Mall of America and the Norwegian Football League.</p>
+        </li>
+        <li>
+          <span class="when">2012 — 2015</span>
+          <div class="role">Software Engineer</div>
+          <div class="org">Bluechip Solutions · Bengaluru, IN</div>
+          <p>Core engineer on the cloud migration of the Profitplus enterprise ERP.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="stack">
+      <h2>Stack</h2>
+      <ul class="chips">
+        <li>Java</li><li>Groovy</li><li>Spring Boot</li><li>TypeScript</li>
+        <li>Elasticsearch</li><li>Kubernetes</li><li>Docker</li><li>AWS</li>
+        <li>PostgreSQL</li><li>MongoDB</li><li>React</li>
+      </ul>
+    </section>
+
+    <footer>
+      <nav class="links" aria-label="Profiles">
+        <a href="https://www.linkedin.com/in/sunil-c-j-4aa92b47/">LinkedIn</a>
+        <a href="https://github.com/sunilcj">GitHub</a>
+      </nav>
+      <p class="colophon">B.E. Information Technology, Vivekananda Institute of Technology · Based in Deventer, working across NL and IN time zones.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
