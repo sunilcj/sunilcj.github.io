@@ -21,23 +21,24 @@ I lead the design and development of **microservice architectures at scale** —
 ### Tech Stack
 
 ```
-Languages      Groovy · Java · TypeScript · Python · Go
-Frameworks     Spring Boot · Node.js
-Search         Elasticsearch
-Databases      PostgreSQL · MongoDB · CouchDB
-Infrastructure Docker · Kubernetes · Terraform · ArgoCD · Traefik
-Cloud          AWS (S3, Glacier, EC2) · Hetzner
-Messaging      RabbitMQ
-Auth           OAuth2 · JWT · SSO · SCIM · LDAP
-CI/CD          Jenkins · GitHub Actions
-Monitoring     Prometheus · Grafana · Loki
+Languages       Groovy · Java · TypeScript · Python · Go
+Frameworks      Spring Boot · Node.js
+Search          Elasticsearch
+Databases       PostgreSQL · MongoDB · CouchDB
+Infrastructure  Docker · Kubernetes · Terraform · ArgoCD · Traefik
+Cloud           AWS (S3, Glacier, EC2) · Hetzner
+Messaging       RabbitMQ
+Auth            OAuth2 · JWT · SSO · SCIM · LDAP
+CI/CD           Jenkins · GitHub Actions
+Monitoring      Prometheus · Grafana · Loki
+AI / LLM        LLM integration · MCP (Model Context Protocol) · AI-assisted development
 ```
 
 ---
 
 ### Highlights
 
-🏗️ Leading development of **20+ microservices** across FlexWhere and EdControls platforms
+🏗️ Leading development of **30+ microservices** across FlexWhere and EdControls platforms
 🔍 Built a **real-time search engine** with Elasticsearch for user profiles, status, and reservations
 🔐 Architected **OAuth2 auth servers**, SSO integrations, and SCIM provisioning
 📅 Created a **multi-tenant Google Calendar connector** with domain-scoped OAuth flows
@@ -46,6 +47,13 @@ Monitoring     Prometheus · Grafana · Loki
 ☁️ Set up **Kubernetes infrastructure** with GitOps (ArgoCD), automated SSL, and multi-cloud deployments
 🗄️ Implemented **S3 Glacier archival** for project lifecycle management with scheduled jobs
 📱 Contributed to **indoor path tracking** using smartphone IMU sensors on construction floorplans
+🤖 Built **MCP servers and LLM integrations**, and embedded AI-assisted development workflows into daily engineering
+
+---
+
+### Website
+
+🌐 **[sunilcj.github.io](https://sunilcj.github.io)** — my about-me page
 
 ---
 
@@ -58,6 +66,6 @@ Monitoring     Prometheus · Grafana · Loki
 ---
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=sunilcj&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=sunilcj&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api?username=sunilcj&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=sunilcj&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="165"/>
 </p>
